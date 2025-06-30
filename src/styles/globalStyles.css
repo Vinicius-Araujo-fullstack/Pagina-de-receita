@@ -1,0 +1,114 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alice", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* Surface colors */
+
+  --background-color: #573824;
+  --surface-color: #f0e8c2;
+  /* Text colors */
+
+  --text-color-primary: #291b1a;
+  --text-color-secondary: #573a37;
+  --text-color-on-bg: #f0e8c2;
+
+  --heading1: 2.5rem;
+  --heading2: 1.5rem;
+  --paragraph: 1rem;
+}
+
+body {
+  background: url(../assets/bg-image.jpg) no-repeat center center / cover;
+
+  h1 {
+    font-size: var(--heading1);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text-color-primary);
+  }
+
+  h2 {
+    font-size: var(--heading2);
+    color: var(--text-color-primary);
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1.5rem;
+  }
+
+  p {
+    font-size: var(--paragraph);
+    color: var(--text-color-secondary);
+    margin-top: 1.5rem;
+  }
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  margin: 0 auto;
+  width: 50rem;
+
+  background-color: var(--surface-color);
+  border-radius: 1.5rem;
+
+  img {
+    border-radius: 1rem;
+  }
+
+  .About {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    li {
+      margin-left: 1.5rem;
+      font-size: var(--paragraph);
+      color: var(--text-color-secondary);
+    }
+  }
+}
+
+#Creditos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text-color-on-bg);
+    gap: 0.25rem;
+  }
+}
